@@ -1,2 +1,8 @@
-# cat=basic/file/1; type=file[json]; label=Shariff configuration file
-configurationFile = EXT:rs_shariff/Configuration/shariff.json
+# cat=basic/other/a; type=string; label=Services to query:Comma-separated list of services to query for the stats. Available services are GooglePlus, Twitter, Facebook, LinkedIn, Reddit, StumbleUpon, Flattr, Pinterest, Xing
+services = GooglePlus,Twitter,Facebook,LinkedIn,Reddit,StumbleUpon,Flattr,Pinterest,Xing
+# cat=basic/other/b; type=int+; label=TTL for the cache in seconds
+ttl = 60
+# cat=advanced/other/a; type=string; label=Facebook application id
+facebook_app_id =
+# cat=advanced/other/b; type=string; label=Facebook API secret
+facebook_secret =
