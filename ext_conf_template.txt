@@ -1,0 +1,2 @@
+# cat=basic/file/1; type=file[json]; label=Shariff configuration file
+configurationFile = EXT:rs_shariff/Configuration/shariff.json
