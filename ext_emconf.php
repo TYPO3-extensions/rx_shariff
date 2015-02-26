@@ -13,7 +13,7 @@ $EM_CONF['rx_shariff'] = array (
 	'constraints' => array (
 		'depends' => array (
 			'php' => '5.4.0-0.0.0',
-			'typo3' => '6.2.10-7.1.99',
+			'typo3' => '6.2.9-7.1.99',
 		),
 		'conflicts' => array (
 		),
