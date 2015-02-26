@@ -28,6 +28,7 @@ class ShariffViewHelper extends AbstractTagBasedViewHelper {
 		$url = $this->controllerContext->getUriBuilder()->reset()->setUseCacheHash(FALSE)->setArguments(array('eID' => 'shariff'))->buildFrontendUri();
 		$this->tag->addAttribute('data-backend-url', $url);
 		$this->tag->addAttribute('class', 'shariff');
+		$this->tag->forceClosingTag(TRUE);
 		return $this->tag->render();
 	}
 }
