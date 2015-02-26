@@ -8,9 +8,9 @@
 
 .. _start:
 
-=====================
-Heise Shariff Backend
-=====================
+=============
+Heise Shariff
+=============
 
 .. only:: html
 
