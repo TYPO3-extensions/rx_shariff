@@ -128,3 +128,17 @@ Git repository: https://git.typo3.org/TYPO3CMS/Extensions/rx_shariff.git
 The contribution workflow follows the Core rules and therefore uses Gerrit: https://review.typo3.org/
 
 To clone your copy consider using the awesome Gerrit-Git-Helper: http://www.wwwision.de/githelper/
+
+Changelog
+=========
+
+Version 1.0
+-----------
+
+Initial release
+
+Version 1.1
+-----------
+
+* Important bugfix for viewhelper
+* Update shariff JS to version 1.7.4 (fixes IE problems)
