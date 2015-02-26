@@ -96,11 +96,17 @@ Nice to know
 ============
 
 News integration
-^^^^^^^^^^^^^^^^
+----------------
 
 You can also easily use this extension within your News extension template.
 Simply paste the viewhelper in your Detail.html template and add the TypoScript to include the Shariff Javascript library
 and you are ready to go.
+
+Facebook integration troubles
+-----------------------------
+
+If you've troubles with showing the count for Facebook, there might be an error.
+Check typo3temp/logs/ for the error message.
 
 Known issues
 ============
