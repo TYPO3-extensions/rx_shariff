@@ -5,13 +5,13 @@
 ---
 conf.py:
   copyright: 2015
-  project: Heise Shariff Backend Module
+  project: Heise Shariff
   version: 1.0
   release: 1.0.0
   latex_documents:
   - - Index
     - rx_shariff.tex
-    - Heise Shariff Backend Module
+    - Heise Shariff
     - Markus Klein
     - manual
   latex_elements:
