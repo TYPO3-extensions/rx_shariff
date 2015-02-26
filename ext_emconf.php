@@ -2,7 +2,7 @@
 
 $EM_CONF['rx_shariff'] = array (
 	'title' => 'Heise Shariff',
-	'description' => 'Shariff implementation for TYPO3 CMS including the backend module and a viewhelper. Based on shariff(1.7.3), shariff-backend-php(1.4.1)',
+	'description' => 'Shariff implementation for TYPO3 CMS including the backend module and a viewhelper.',
 	'category' => 'plugin',
 	'version' => '1.1.0-dev',
 	'state' => 'stable',
