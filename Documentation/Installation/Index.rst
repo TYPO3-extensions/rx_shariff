@@ -152,3 +152,8 @@ Version 1.2
 -----------
 
 * Update shariff JS to version 1.8.0
+
+Version 1.3
+-----------
+
+* Update shariff JS to version 1.9.3
