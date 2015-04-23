@@ -59,6 +59,8 @@ Additionally the extension provides a Fluid viewhelper to easily integrate Shari
 
 **Optionally you can define all data attributes available for Shariff.**
 
+Example usages can be found here: http://heiseonline.github.io/shariff/
+
 For TYPO3 CMS 6.2 use:
 
 .. code-block:: html
