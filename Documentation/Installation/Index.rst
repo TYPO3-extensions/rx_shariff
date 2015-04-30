@@ -38,6 +38,9 @@ Configuration
 You can configure the extension in the Extension Manager.
 It allows to set most of the options as documented here: https://github.com/heiseonline/shariff-backend-php
 
+You have to enable some URL rewriting extension (e.g. realurl or cooluri) in order to have proper counter values,
+since Shariff itself only looks at the URL, but omits any querystring.
+
 Frontend usage
 ==============
 
@@ -65,13 +68,13 @@ For TYPO3 CMS 6.2 use:
 
 .. code-block:: html
 
-	<rx:shariff additionalAttributes="{data-url: 'http://example.com/'}" />
+	<rx:shariff additionalAttributes="{data-url: 'http://example.com/', data-services: '[&quot;whatsapp&quot;,&quot;facebook&quot;]'}" />
 
 For TYPO3 CMS 7 you may also use the newer syntax:
 
 .. code-block:: html
 
-	<rx:shariff data="{url: 'http://example.com/'}" />
+	<rx:shariff data="{url: 'http://example.com/', services: '[&quot;whatsapp&quot;,&quot;facebook&quot;]'}" />
 
 
 JavaScript and CSS integration
@@ -108,6 +111,9 @@ News integration
 You can also easily use this extension within your News extension template.
 Simply paste the viewhelper in your Detail.html template and add the TypoScript to include the Shariff Javascript library
 and you are ready to go.
+
+Don't forget to enable a URL rewriter, otherwise all your sharing buttons will refer to the news detail page, but without
+displaying the actual news.
 
 Facebook integration troubles
 -----------------------------
@@ -159,3 +165,15 @@ Version 1.3
 -----------
 
 * Update shariff JS to version 1.9.3
+
+Version 1.4
+-----------
+
+* Update shariff JS to version 1.10.0
+
+Version 1.5
+-----------
+
+* Update shariff JS to version 1.11.0
+* Improved documentation
+* TYPO3 CMS 7.2 support
