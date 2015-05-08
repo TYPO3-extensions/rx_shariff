@@ -17,7 +17,7 @@ module as eID script.
 
 More information about Shariff in general can be found here: https://github.com/heiseonline/shariff
 
-The extension is based on shariff(1.11.0) and shariff-backend-php(1.4.1).
+The extension is based on shariff(1.12.0) and shariff-backend-php(1.4.1).
 
 .. image:: shariff.jpg
 	:width: 400px
@@ -194,3 +194,9 @@ Version 1.5.1
 -------------
 
 * Removes wrong information from the documentation
+
+
+Version 1.6.0
+-------------
+
+* Update shariff JS to version 1.12.0
