@@ -66,13 +66,13 @@ For TYPO3 CMS 6.2 use:
 
 .. code-block:: html
 
-	<rx:shariff additionalAttributes="{data-url: 'http://example.com/', data-services: '[\"whatsapp\",\"facebook\"]'}" />
+	<rx:shariff additionalAttributes="{data-url: 'http://example.com/'}" services="whatsapp,facebook" />
 
 For TYPO3 CMS 7 you may also use the newer syntax:
 
 .. code-block:: html
 
-	<rx:shariff data="{url: 'http://example.com/', services: '[\"whatsapp\",\"facebook\"]'}" />
+	<rx:shariff data="{url: 'http://example.com/'}" services="whatsapp,facebook" />
 
 
 **Note:** The special syntax with escaping the inner double quotes is required for Fluid to work.
