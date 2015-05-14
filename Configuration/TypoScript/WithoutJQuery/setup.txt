@@ -1,0 +1,6 @@
+
+# ==================
+# Load Shariff files
+# ==================
+page.includeJSFooterlibs.tx_rxshariff_shariff = EXT:rx_shariff/Resources/Public/JavaScript/shariff.min.js
+page.includeCSS.tx_rxshariff_shariff = EXT:rx_shariff/Resources/Public/Stylesheet/shariff.min.css

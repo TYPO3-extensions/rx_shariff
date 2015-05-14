@@ -81,8 +81,14 @@ JavaScript and CSS integration
 ------------------------------
 
 The extension also ships the frontend Javscript and default styles.
+You can simple add one of the four available static templates:
 
-You can simply integrate them in your page template:
+* Shariff: Include Shariff and jQuery
+* Shariff: Include Shariff, font-awesome and jQuery
+* Shariff: Include Shariff without jQuery
+* Shariff: Include Shariff, font-awesome without jQuery
+
+If you want, you can also simply integrate them in your own page template:
 
 .. code-block:: typoscript
 
@@ -94,7 +100,7 @@ You can simply integrate them in your page template:
 
 	page.includeJSFooterlibs.shariff = EXT:rx_shariff/Resources/Public/JavaScript/shariff.min.js
 	page.includeCSS.shariff = EXT:rx_shariff/Resources/Public/Stylesheet/shariff.min.css
-	# or you may use
+	# or you may use the following for include font-awesome too
 	# page.includeCSS.shariff = EXT:rx_shariff/Resources/Public/Stylesheet/shariff.complete.css
 
 .. important::
