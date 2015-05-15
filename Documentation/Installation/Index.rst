@@ -212,3 +212,10 @@ Version 1.7.0
 -------------
 
 * Update shariff JS to version 1.13.0
+
+
+Version 1.8.0
+-------------
+
+* Added static TypoScript templates
+* New "services" attribute for the viewhelper to ease syntax
