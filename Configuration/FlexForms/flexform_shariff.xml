@@ -1,0 +1,279 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+
+	<sheets>
+		<sDEF>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_tab.settings
+					</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.enableBackend>
+						<TCEforms>
+							<label>LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.enabledBackend</label>
+							<config>
+								<type>check</type>
+							</config>
+						</TCEforms>
+					</settings.enableBackend>
+					<settings.data.orientation>
+						<TCEforms>
+							<label>
+								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.orientation
+							</label>
+							<config>
+								<type>radio</type>
+								<default>horizontal</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.orientation.horizontal</numIndex>
+										<numIndex index="1">horizontal</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.orientation.vertical</numIndex>
+										<numIndex index="1">vertical</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.data.orientation>
+					<settings.data.theme>
+						<TCEforms>
+							<label>
+								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.theme
+							</label>
+							<config>
+								<type>select</type>
+								<default>standard</default>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.theme.standard</numIndex>
+										<numIndex index="1">standard</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.theme.grey</numIndex>
+										<numIndex index="1">grey</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.theme.white</numIndex>
+										<numIndex index="1">white</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.data.theme>
+					<settings.data.lang>
+						<TCEforms>
+							<label>
+								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.lang
+							</label>
+							<config>
+								<type>input</type>
+								<size>20</size>
+								<default>en</default>
+							</config>
+						</TCEforms>
+					</settings.data.lang>
+				</el>
+			</ROOT>
+		</sDEF>
+		<services>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_tab.services</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.data.services>
+						<TCEforms>
+							<label>
+								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services
+							</label>
+							<config>
+								<type>select</type>
+								<multiple>1</multiple>
+								<size>10</size>
+								<maxitems>10</maxitems>
+								<items>
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.twitter</numIndex>
+										<numIndex index="1">twitter</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.facebook</numIndex>
+										<numIndex index="1">facebook</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.googleplus</numIndex>
+										<numIndex index="1">googleplus</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.linkedin</numIndex>
+										<numIndex index="1">linkedin</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.xing</numIndex>
+										<numIndex index="1">xing</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.pinterest</numIndex>
+										<numIndex index="1">pinterest</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.whatsapp</numIndex>
+										<numIndex index="1">whatsapp</numIndex>
+									</numIndex>
+									<numIndex index="7" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.mail</numIndex>
+										<numIndex index="1">mail</numIndex>
+									</numIndex>
+									<numIndex index="8" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.info</numIndex>
+										<numIndex index="1">info</numIndex>
+									</numIndex>
+								</items>
+							</config>
+						</TCEforms>
+					</settings.data.services>
+				</el>
+			</ROOT>
+		</services>
+		<twitter>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_tab.twitter
+					</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.data.twitter-via>
+						<TCEforms>
+							<label>
+								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.twittername
+							</label>
+							<config>
+								<type>input</type>
+								<size>20</size>
+							</config>
+						</TCEforms>
+					</settings.data.twitter-via>
+				</el>
+			</ROOT>
+		</twitter>
+		<pinterest>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_tab.pinterest
+					</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.data.media-url>
+						<TCEforms>
+							<label>
+								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.pinterest.media-url
+							</label>
+							<config>
+								<type>input</type>
+								<size>20</size>
+							</config>
+						</TCEforms>
+					</settings.data.media-url>
+				</el>
+			</ROOT>
+		</pinterest>
+		<mail>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_tab.mail
+					</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.data.mail-subject>
+						<TCEforms>
+							<label>
+								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.mail.mail-subject
+							</label>
+							<config>
+								<type>input</type>
+								<size>20</size>
+							</config>
+						</TCEforms>
+					</settings.data.mail-subject>
+					<settings.data.mail-body>
+						<TCEforms>
+							<label>
+								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.mail.mail-body
+							</label>
+							<config>
+								<type>input</type>
+								<size>20</size>
+							</config>
+						</TCEforms>
+					</settings.data.mail-body>
+					<settings.data.mail-url>
+						<TCEforms>
+							<label>
+								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.mail.mail-url
+							</label>
+							<config>
+								<type>input</type>
+								<size>20</size>
+								<default>mailto:</default>
+							</config>
+						</TCEforms>
+					</settings.data.mail-url>
+				</el>
+			</ROOT>
+		</mail>
+		<sharing>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_tab.sharing
+					</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.data.title>
+						<TCEforms>
+							<label>
+								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.title
+							</label>
+							<config>
+								<type>input</type>
+								<size>20</size>
+							</config>
+						</TCEforms>
+					</settings.data.title>
+					<settings.data.url>
+						<TCEforms>
+							<label>
+								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.url
+							</label>
+							<config>
+								<type>input</type>
+								<size>20</size>
+							</config>
+						</TCEforms>
+					</settings.data.url>
+					<settings.data.referrer-track>
+						<TCEforms>
+							<label>
+								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.referrer-track
+							</label>
+							<config>
+								<type>input</type>
+								<size>20</size>
+							</config>
+						</TCEforms>
+					</settings.data.referrer-track>
+				</el>
+			</ROOT>
+		</sharing>
+	</sheets>
+</T3DataStructure>

@@ -79,3 +79,4 @@ Version 2.0.0
 
 * Update shariff backend to version 1.5.0
 * Use native caching framework instead of bundled one
+* Add Frontend plugin with FlexForms configuration

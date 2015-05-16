@@ -13,3 +13,13 @@ if (!isset($GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][
 		'groups' => ['pages', 'all']
 	];
 }
+
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+	'Reelworx.RxShariff',
+	'Shariff',
+	array(
+		'Shariff' => 'index'
+	),
+	array(
+	)
+);

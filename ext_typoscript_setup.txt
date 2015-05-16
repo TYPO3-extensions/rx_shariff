@@ -1,9 +1,26 @@
-
 plugin.rx_shariff {
 	data-backend-url = TEXT
 	data-backend-url.stdWrap.typolink {
 		parameter = #
 		additionalParams = &eID=shariff
 		returnLast = url
+	}
+}
+
+tt_content.list.20.rxshariff_shariff {
+	settings {
+		enableBackend = 1
+		data {
+			lang = en
+			mail-body =
+			mail-subject =
+			mail-url = mailto:
+			media-url = null
+			orientation = horizontal
+			referrer-track = null
+			services =
+			theme = standard
+			twitter-via = null
+		}
 	}
 }
