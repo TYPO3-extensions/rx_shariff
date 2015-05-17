@@ -27,7 +27,7 @@ Heise Shariff
 		The rx_shariff extension provides the shariff data backend to retrieve social media stats.
 
 	:Keywords:
-		Shariff, JavaScript, Facebook, Twitter, Xing
+		Social Media, JavaScript, GooglePlus, Twitter, Facebook, LinkedIn, Reddit, StumbleUpon, Flattr, Pinterest, Xing
 
 	:Copyright:
 		Reelworx GmbH
@@ -56,4 +56,7 @@ Heise Shariff
 	:titlesonly:
 	:glob:
 
+	General/Index
 	Installation/Index
+	Contributing/Index
+	Changelog/Index

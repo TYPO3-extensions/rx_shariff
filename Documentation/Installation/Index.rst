@@ -6,24 +6,6 @@
 .. include:: ../Includes.txt
 
 
-What does it do?
-================
-
-The extension provides a ready-to-use server module for the Heise Shariff frontend social media integration.
-Moreover a viewhelper is provided for simple frontend integration.
-
-Shariff has the possibility to load likes/shares/etc via a server module. This extension provides the server
-module as eID script.
-
-More information about Shariff in general can be found here: https://github.com/heiseonline/shariff
-
-The extension is based on shariff(1.13.0) and shariff-backend-php(1.4.1).
-
-.. image:: shariff.jpg
-	:width: 400px
-	:alt: Shariff Screenshot
-
-
 Installation
 ============
 
@@ -33,14 +15,14 @@ The provided Javascript requires jQuery to be loaded. You have to take care of t
 
 
 Configuration
-=============
+-------------
 
 You can configure the extension in the Extension Manager.
 It allows to set most of the options for the backend module as documented here: https://github.com/heiseonline/shariff-backend-php
 
 
 Frontend usage
-==============
+--------------
 
 The extension provides multiple ways to use Shariff in frontend.
 
@@ -77,8 +59,9 @@ For TYPO3 CMS 7 you may also use the newer syntax:
 
 **Note:** The special syntax with escaping the inner double quotes is required for Fluid to work.
 
+
 JavaScript and CSS integration
-------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The extension also ships the frontend Javscript and default styles.
 You can simple add one of the four available static templates:
@@ -110,112 +93,12 @@ If you want, you can also simply integrate them in your own page template:
 
 
 Nice to know
-============
+------------
 
 
 News integration
-----------------
+^^^^^^^^^^^^^^^^
 
 You can also easily use this extension within your News extension template.
 Simply paste the viewhelper in your `Detail.html` template and add the TypoScript to include the Shariff Javascript library
 and you are ready to go.
-
-
-Facebook integration troubles
------------------------------
-
-If you've troubles with showing the count for Facebook, there might be an error.
-Check typo3temp/logs/ for the error message.
-
-
-Known issues
-============
-
-None, at the moment.
-
-
-Bug reports
-===========
-
-
-Issue tracker: https://forge.typo3.org/projects/extension-rx_shariff
-
-
-Contributions
-=============
-
-Contributions and ideas are very welcome.
-
-Git repository: https://git.typo3.org/TYPO3CMS/Extensions/rx_shariff.git
-
-The contribution workflow follows the Core rules and therefore uses Gerrit: https://review.typo3.org/
-
-To clone your copy consider using the awesome Gerrit-Git-Helper: http://www.wwwision.de/githelper/#TYPO3CMS/Extensions/rx_shariff.git
-
-
-Change Log
-==========
-
-
-Version 1.0
------------
-
-Initial release
-
-
-Version 1.1
------------
-
-* Important bugfix for viewhelper
-* Update shariff JS to version 1.7.4 (fixes IE problems)
-
-
-Version 1.2
------------
-
-* Update shariff JS to version 1.8.0
-
-
-Version 1.3
------------
-
-* Update shariff JS to version 1.9.3
-
-
-Version 1.4
------------
-
-* Update shariff JS to version 1.10.0
-
-
-Version 1.5
------------
-
-* Update shariff JS to version 1.11.0
-* Improved documentation
-* TYPO3 CMS 7.2 support
-
-
-Version 1.5.1
--------------
-
-* Removes wrong information from the documentation
-
-
-Version 1.6.0
--------------
-
-* Update shariff JS to version 1.12.0
-
-
-Version 1.7.0
--------------
-
-* Update shariff JS to version 1.13.0
-
-
-Version 1.8.0
--------------
-
-* Added static TypoScript templates
-* New "services" attribute for the viewhelper to ease syntax
