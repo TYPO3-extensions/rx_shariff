@@ -1,7 +1,6 @@
 <?php
 
 namespace Heise\Shariff\Backend;
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
  * Class Facebook
@@ -61,9 +60,6 @@ class Facebook extends Request implements ServiceInterface
                 $request = $this->client->createRequest('GET', $url);
                 return $this->client->send($request)->getBody(true);
             } catch (\Exception $e) {
-	            /** @var \TYPO3\CMS\Core\Log\LogManager $logManager */
-	            $logManager = GeneralUtility::makeInstance('TYPO3\\CMS\\Core\\Log\\LogManager');
-	            $logManager->getLogger(__CLASS__)->error($e->getMessage());
             }
         }
         return null;
