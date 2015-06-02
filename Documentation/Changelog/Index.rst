@@ -80,3 +80,9 @@ Version 2.0.0
 * Update shariff backend to version 1.5.0
 * Use native TYPO3 caching framework instead of bundled one
 * Add Frontend plugin with FlexForms configuration
+
+
+Version 2.1.0
+-------------
+
+* Updated shariff to version 1.14.0
