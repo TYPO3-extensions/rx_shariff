@@ -85,4 +85,5 @@ Version 2.0.0
 Version 2.1.0
 -------------
 
+* Regression fix: Use guzzle 5.3 (6.0 slipped in by accident)
 * Updated shariff to version 1.14.0
