@@ -4,7 +4,7 @@ $EM_CONF['rx_shariff'] = array (
 	'title' => 'Heise Shariff',
 	'description' => 'Shariff implementation for TYPO3 CMS including the backend module, a viewhelper and a plugin',
 	'category' => 'plugin',
-	'version' => '2.1.0',
+	'version' => '2.2.0',
 	'state' => 'stable',
 	'uploadfolder' => FALSE,
 	'author' => 'Markus Klein',
@@ -13,7 +13,7 @@ $EM_CONF['rx_shariff'] = array (
 	'constraints' => array(
 		'depends' => array(
 			'php' => '5.4.0-0.0.0',
-			'typo3' => '6.2.9-7.2.99',
+			'typo3' => '6.2.9-7.3.99',
 		),
 		'conflicts' => array(),
 		'suggests' => array(),
