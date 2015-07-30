@@ -13,6 +13,7 @@
 namespace Reelworx\RxShariff;
 
 use Heise\Shariff\CacheInterface;
+use TYPO3\CMS\Core\Cache\Frontend\StringFrontend;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 class Cache implements CacheInterface {
@@ -23,7 +24,7 @@ class Cache implements CacheInterface {
 	protected $ttl = 60;
 
 	/**
-	 * @var
+	 * @var StringFrontend
 	 */
 	protected $cache;
 
