@@ -10,6 +10,7 @@ Change Log
 ==========
 
 
+* Declare compatibility with CMS 7.4
 * Add composer.json
 * Updated shariff to version 1.16.0
 
