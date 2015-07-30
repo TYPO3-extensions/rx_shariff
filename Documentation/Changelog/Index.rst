@@ -10,6 +10,7 @@ Change Log
 ==========
 
 
+* Add composer.json
 * Updated shariff to version 1.16.0
 
 
