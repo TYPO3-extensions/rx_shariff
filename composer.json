@@ -1,7 +1,7 @@
 {
   "name": "reelworx/rx_shariff",
   "description": "Shariff implementation for TYPO3 CMS including the backend module, a viewhelper and a plugin.",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "type": "typo3-cms-extension",
   "license": "GPL-2.0+",
   "authors": [

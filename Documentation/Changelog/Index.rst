@@ -9,6 +9,8 @@
 Change Log
 ==========
 
+Version 2.3.0
+-------------
 
 * Declare compatibility with CMS 7.4
 * Add composer.json
