@@ -9,6 +9,12 @@
 Change Log
 ==========
 
+Version 3.0.0
+-------------
+
+* Breaking: Javascript is included as normal footer JS and not as footer lib
+
+
 Version 2.4.0
 -------------
 

@@ -32,7 +32,15 @@ You can simple add one of the four available static templates:
 * Shariff: Include Shariff without jQuery
 * Shariff: Include Shariff, font-awesome without jQuery
 
-If you want, you can also simply integrate them in your own page template:
+jQuery is included by using the local jQuery version shipped with the TYPO3 CMS Core.
+
+.. note::
+
+	In case you want to integrate the Javascript and CSS in your asset workflow (e.g. gulp or grunt) you don't need
+	to include any static template or TypoScript
+
+
+If you want, you can also simply integrate them manually in your own page template:
 
 .. code-block:: typoscript
 
@@ -42,14 +50,15 @@ If you want, you can also simply integrate them in your own page template:
 	page.javascriptLibs.jQuery.version = latest
 	page.javascriptLibs.jQuery.source = local
 
-	page.includeJSFooterlibs.shariff = EXT:rx_shariff/Resources/Public/JavaScript/shariff.min.js
+	page.includeJSFooter.shariff = EXT:rx_shariff/Resources/Public/JavaScript/shariff.min.js
 	page.includeCSS.shariff = EXT:rx_shariff/Resources/Public/Stylesheet/shariff.min.css
 	# or you may use the following for include font-awesome too
 	# page.includeCSS.shariff = EXT:rx_shariff/Resources/Public/Stylesheet/shariff.complete.css
 
+
 .. important::
 
-	You need to include the Javascript in your page template, otherwise the usages described below will not work.
+	The Javascript has to be included in your frontend page in either way, otherwise the usages described below will not work.
 
 
 Frontend usage
@@ -76,8 +85,9 @@ Additionally the extension provides a Fluid viewhelper to easily integrate Shari
 
 .. code-block:: html
 
-	{namespace rx=Reelworx\RxShariff\ViewHelper}
-	<rx:shariff data="{url: 'http://example.com/'}" services="whatsapp,facebook" enableBackend="true" />
+	<div xmlns:rx="http://typo3.org/ns/Reelworx/RxShariff/ViewHelper">
+		<rx:shariff data="{url: 'http://example.com/'}" services="whatsapp,facebook" enableBackend="true" />
+	</div>
 
 **Optionally you can define all data attributes available for Shariff.**
 
