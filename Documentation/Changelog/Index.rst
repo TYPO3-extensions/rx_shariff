@@ -13,6 +13,7 @@ Version 3.0.0
 -------------
 
 * Breaking: Javascript is included as normal footer JS and not as footer lib
+* Updated shariff to version 1.18.0
 
 
 Version 2.4.0
