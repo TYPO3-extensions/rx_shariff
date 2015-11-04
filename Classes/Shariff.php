@@ -28,7 +28,7 @@ class Shariff
     public function render()
     {
         $extensionConfiguration = array(
-            'services' => 'GooglePlus,Twitter,Facebook,LinkedIn,Reddit,StumbleUpon,Flattr,Pinterest,Xing',
+            'services' => 'GooglePlus, Twitter, Facebook, LinkedIn, Reddit, StumbleUpon, Flattr, Pinterest, Xing, AddThis',
             'facebook_app_id' => '',
             'facebook_secret' => '',
         );

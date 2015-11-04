@@ -14,6 +14,7 @@ Version 4.0.0
 
 * Breaking: Stylesheets have been moved to new Public/Css directory
 * Updated shariff to version 1.20.0
+* Updated shariff-php to version 1.6.0
 
 
 Version 3.0.0
