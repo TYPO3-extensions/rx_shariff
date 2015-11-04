@@ -1,6 +1,5 @@
-
 # =====================================
 # Load Shariff files incl. font-awesome
 # =====================================
 page.includeJSFooter.tx_rxshariff_shariff = EXT:rx_shariff/Resources/Public/JavaScript/shariff.min.js
-page.includeCSS.tx_rxshariff_shariff = EXT:rx_shariff/Resources/Public/Stylesheet/shariff.complete.css
+page.includeCSS.tx_rxshariff_shariff = EXT:rx_shariff/Resources/Public/Css/shariff.complete.css

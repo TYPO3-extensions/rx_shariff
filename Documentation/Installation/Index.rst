@@ -50,10 +50,10 @@ If you want, you can also simply integrate them manually in your own page templa
 	page.javascriptLibs.jQuery.version = latest
 	page.javascriptLibs.jQuery.source = local
 
-	page.includeJSFooter.shariff = EXT:rx_shariff/Resources/Public/JavaScript/shariff.min.js
-	page.includeCSS.shariff = EXT:rx_shariff/Resources/Public/Stylesheet/shariff.min.css
+	page.includeJSFooter.shariff = EXT:rx_shariff/Resources/Public/Css/shariff.min.js
+	page.includeCSS.shariff = EXT:rx_shariff/Resources/Public/Css/shariff.min.css
 	# or you may use the following for include font-awesome too
-	# page.includeCSS.shariff = EXT:rx_shariff/Resources/Public/Stylesheet/shariff.complete.css
+	# page.includeCSS.shariff = EXT:rx_shariff/Resources/Public/Css/shariff.complete.css
 
 
 .. important::

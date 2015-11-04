@@ -1,4 +1,3 @@
-
 # =============================
 # Load jQuery and Shariff files
 # =============================
@@ -7,4 +6,4 @@ page.javascriptLibs.jQuery.version = latest
 page.javascriptLibs.jQuery.source = local
 
 page.includeJSFooter.tx_rxshariff_shariff = EXT:rx_shariff/Resources/Public/JavaScript/shariff.min.js
-page.includeCSS.tx_rxshariff_shariff = EXT:rx_shariff/Resources/Public/Stylesheet/shariff.min.css
+page.includeCSS.tx_rxshariff_shariff = EXT:rx_shariff/Resources/Public/Css/shariff.min.css
