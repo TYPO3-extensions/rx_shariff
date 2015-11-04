@@ -22,40 +22,42 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  *
  * @author Markus Klein
  */
-class Shariff {
+class Shariff
+{
 
-	public function render() {
-		$extensionConfiguration = array(
-			'services' => 'GooglePlus,Twitter,Facebook,LinkedIn,Reddit,StumbleUpon,Flattr,Pinterest,Xing',
-			'facebook_app_id' => '',
-			'facebook_secret' => ''
-		);
-		$userExtensionConfiguration = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['rx_shariff']);
-		if (is_array($userExtensionConfiguration)) {
-			$extensionConfiguration = array_replace($extensionConfiguration, $userExtensionConfiguration);
-		}
+    public function render()
+    {
+        $extensionConfiguration = array(
+            'services' => 'GooglePlus,Twitter,Facebook,LinkedIn,Reddit,StumbleUpon,Flattr,Pinterest,Xing',
+            'facebook_app_id' => '',
+            'facebook_secret' => '',
+        );
+        $userExtensionConfiguration = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['rx_shariff']);
+        if (is_array($userExtensionConfiguration)) {
+            $extensionConfiguration = array_replace($extensionConfiguration, $userExtensionConfiguration);
+        }
 
-		$configuration = array(
-			'services' => GeneralUtility::trimExplode(',', $extensionConfiguration['services']),
-			'cacheClass' => 'Reelworx\\RxShariff\\Cache',
-			'cache' => [
-				'ttl' => (int)$extensionConfiguration['ttl']
-			]
-		);
+        $configuration = array(
+            'services' => GeneralUtility::trimExplode(',', $extensionConfiguration['services']),
+            'cacheClass' => 'Reelworx\\RxShariff\\Cache',
+            'cache' => [
+                'ttl' => (int)$extensionConfiguration['ttl'],
+            ],
+        );
 
-		if (in_array('Facebook', $configuration['services'], TRUE)) {
-			$configuration['Facebook'] = array(
-				'app_id' => $extensionConfiguration['facebook_app_id'],
-				'secret' => $extensionConfiguration['facebook_secret'],
-			);
-		}
+        if (in_array('Facebook', $configuration['services'], true)) {
+            $configuration['Facebook'] = array(
+                'app_id' => $extensionConfiguration['facebook_app_id'],
+                'secret' => $extensionConfiguration['facebook_secret'],
+            );
+        }
 
-		$url = !empty($_GET['url']) ? $_GET['url'] : (string)$_SERVER['HTTP_REFERER'];
+        $url = !empty($_GET['url']) ? $_GET['url'] : (string)$_SERVER['HTTP_REFERER'];
 
-		$shariff = new Backend($configuration);
-		$result = $shariff->get($url);
+        $shariff = new Backend($configuration);
+        $result = $shariff->get($url);
 
-		header('Content-type: application/json');
-		echo json_encode($result);
-	}
+        header('Content-type: application/json');
+        echo json_encode($result);
+    }
 }

@@ -19,28 +19,30 @@ use TYPO3\CMS\Extbase\Mvc\Controller\ActionController;
  *
  * @author Frank Nägler <typo3@naegler.net>
  */
-class ShariffController extends ActionController {
+class ShariffController extends ActionController
+{
 
-	/**
-	 * Render content element
-	 *
-	 * This action renders the content element in Frontend
-	 * based on the TypoScript settings and overwritten by
-	 * the settings from FlexForms.
-	 *
-	 * @return void
-	 */
-	public function indexAction() {
-		$data = $this->settings['data'];
-		unset($data['services']);
-		foreach ($data as $key => $value) {
-			if (trim($value) === '') {
-				unset($data[$key]);
-			}
-		}
+    /**
+     * Render content element
+     *
+     * This action renders the content element in Frontend
+     * based on the TypoScript settings and overwritten by
+     * the settings from FlexForms.
+     *
+     * @return void
+     */
+    public function indexAction()
+    {
+        $data = $this->settings['data'];
+        unset($data['services']);
+        foreach ($data as $key => $value) {
+            if (trim($value) === '') {
+                unset($data[$key]);
+            }
+        }
 
-		$this->view->assign('data', $data);
-		$this->view->assign('enableBackend', $this->settings['enableBackend']);
-		$this->view->assign('services', $this->settings['data']['services']);
-	}
+        $this->view->assign('data', $data);
+        $this->view->assign('enableBackend', $this->settings['enableBackend']);
+        $this->view->assign('services', $this->settings['data']['services']);
+    }
 }

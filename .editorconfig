@@ -20,7 +20,7 @@ indent_size = 4
 # HTML-Files
 [*.html]
 indent_style = tab
-indent_size = 4
+indent_size = 2
 
 # XML-Files
 [*.xml]
@@ -49,7 +49,7 @@ indent_size = 4
 
 # PHP-Files
 [*.php]
-indent_style = tab
+indent_style = space
 indent_size = 4
 
 # ReST-Files
