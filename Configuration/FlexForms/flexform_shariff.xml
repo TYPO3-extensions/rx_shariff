@@ -54,6 +54,7 @@
 							</label>
 							<config>
 								<type>select</type>
+								<renderType>selectSingle</renderType>
 								<default>standard</default>
 								<items type="array">
 									<numIndex index="0" type="array">
@@ -110,6 +111,7 @@
 							<config>
 								<type>select</type>
 								<multiple>1</multiple>
+								<renderType>selectCheckBox</renderType>
 								<size>14</size>
 								<maxitems>13</maxitems>
 								<items>
