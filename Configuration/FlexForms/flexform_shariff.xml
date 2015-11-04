@@ -109,8 +109,8 @@
 							<config>
 								<type>select</type>
 								<multiple>1</multiple>
-								<size>10</size>
-								<maxitems>10</maxitems>
+								<size>14</size>
+								<maxitems>13</maxitems>
 								<items>
 									<numIndex index="0" type="array">
 										<numIndex index="0">
@@ -161,6 +161,30 @@
 										<numIndex index="1">mail</numIndex>
 									</numIndex>
 									<numIndex index="8" type="array">
+										<numIndex index="0">
+											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.addthis
+										</numIndex>
+										<numIndex index="1">addthis</numIndex>
+									</numIndex>
+									<numIndex index="9" type="array">
+										<numIndex index="0">
+											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.tumblr
+										</numIndex>
+										<numIndex index="1">tumblr</numIndex>
+									</numIndex>
+									<numIndex index="10" type="array">
+										<numIndex index="0">
+											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.flattr
+										</numIndex>
+										<numIndex index="1">flattr</numIndex>
+									</numIndex>
+									<numIndex index="11" type="array">
+										<numIndex index="0">
+											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.diaspora
+										</numIndex>
+										<numIndex index="1">diaspora</numIndex>
+									</numIndex>
+									<numIndex index="12" type="array">
 										<numIndex index="0">
 											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.info
 										</numIndex>

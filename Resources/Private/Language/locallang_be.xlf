@@ -1,115 +1,127 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2015-05-17T13:56:53Z">
-        <header>
-            <authorName>Markus Klein</authorName>
-            <authorEmail>support@reelworx.at</authorEmail>
-            <generator>LFEditor</generator>
-        </header>
-        <body>
-            <trans-unit id="flexforms_general.enabledBackend">
-                <source>Enable Shariff Backend (Show share count)</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.lang">
-                <source>Language (ISO-2 code)</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.mail.mail-body">
-                <source>Bodytext (empty for auto generated content)</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.mail.mail-subject">
-                <source>Subject (empty for auto generated content)</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.mail.mail-url">
-                <source>Mail-URL, the URL target used for the mail service button (defaults to &quot;mailto:&quot;)
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-04T12:09:08Z">
+		<header>
+			<authorName>Markus Klein</authorName>
+			<authorEmail>support@reelworx.at</authorEmail>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="flexforms_general.enabledBackend">
+			<source>Enable Shariff Backend (Show share count)</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.lang">
+			<source>Language (ISO-2 code)</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.mail.mail-body">
+			<source>Bodytext (empty for auto generated content)</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.mail.mail-subject">
+			<source>Subject (empty for auto generated content)</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.mail.mail-url" xml:space="preserve">
+			<source>Mail-URL, the URL target used for the mail service button (defaults to &quot;mailto:&quot;)
                 </source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.orientation">
-                <source>Orientation</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.orientation.horizontal">
-                <source>Horizontal</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.orientation.vertical">
-                <source>Vertical</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.pinterest.media-url">
-                <source>Media URL to be shared</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.referrer-track">
-                <source>A string that will be appended to the share url.</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.services">
-                <source>Services</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.services.facebook">
-                <source>Facebook</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.services.googleplus">
-                <source>Google+</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.services.info">
-                <source>Info</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.services.linkedin">
-                <source>LinkedIn</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.services.mail">
-                <source>Mail</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.services.pinterest">
-                <source>Pinterest</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.services.twitter">
-                <source>Twitter</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.services.whatsapp">
-                <source>WhatsApp</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.services.xing">
-                <source>XING</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.theme">
-                <source>Theme</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.theme.grey">
-                <source>Grey</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.theme.standard">
-                <source>Standard</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.theme.white">
-                <source>White</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.title">
-                <source>Title to be used as share text (empty for auto generated content)</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.twittername">
-                <source>Twitter name (for &quot;via&quot;)</source>
-            </trans-unit>
-            <trans-unit id="flexforms_general.url">
-                <source>The canonical URL of the page to share. (empty for current URL)</source>
-            </trans-unit>
-            <trans-unit id="flexforms_tab.mail">
-                <source>Mail</source>
-            </trans-unit>
-            <trans-unit id="flexforms_tab.pinterest">
-                <source>Pinterest</source>
-            </trans-unit>
-            <trans-unit id="flexforms_tab.services">
-                <source>Services</source>
-            </trans-unit>
-            <trans-unit id="flexforms_tab.settings">
-                <source>Layout</source>
-            </trans-unit>
-            <trans-unit id="flexforms_tab.sharing">
-                <source>Sharing</source>
-            </trans-unit>
-            <trans-unit id="flexforms_tab.twitter">
-                <source>Twitter</source>
-            </trans-unit>
-            <trans-unit id="plugin_title">
-                <source>Shariff Social Icons</source>
-            </trans-unit>
-        </body>
-    </file>
+		</trans-unit>
+		<trans-unit id="flexforms_general.orientation">
+			<source>Orientation</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.orientation.horizontal">
+			<source>Horizontal</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.orientation.vertical">
+			<source>Vertical</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.pinterest.media-url">
+			<source>Media URL to be shared</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.referrer-track">
+			<source>A string that will be appended to the share url.</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services">
+			<source>Services</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.addthis">
+			<source>AddThis</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.diaspora">
+			<source>Diaspora</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.facebook">
+			<source>Facebook</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.flattr">
+			<source>Flattr</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.googleplus">
+			<source>Google+</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.info">
+			<source>Info</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.linkedin">
+			<source>LinkedIn</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.mail">
+			<source>Mail</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.pinterest">
+			<source>Pinterest</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.tumblr">
+			<source>Tumblr</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.twitter">
+			<source>Twitter</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.whatsapp">
+			<source>WhatsApp</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.xing">
+			<source>XING</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.theme">
+			<source>Theme</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.theme.grey">
+			<source>Grey</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.theme.standard">
+			<source>Standard</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.theme.white">
+			<source>White</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.title">
+			<source>Title to be used as share text (empty for auto generated content)</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.twittername">
+			<source>Twitter name (for &quot;via&quot;)</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.url">
+			<source>The canonical URL of the page to share. (empty for current URL)</source>
+		</trans-unit>
+		<trans-unit id="flexforms_tab.mail">
+			<source>Mail</source>
+		</trans-unit>
+		<trans-unit id="flexforms_tab.pinterest">
+			<source>Pinterest</source>
+		</trans-unit>
+		<trans-unit id="flexforms_tab.services">
+			<source>Services</source>
+		</trans-unit>
+		<trans-unit id="flexforms_tab.settings">
+			<source>Layout</source>
+		</trans-unit>
+		<trans-unit id="flexforms_tab.sharing">
+			<source>Sharing</source>
+		</trans-unit>
+		<trans-unit id="flexforms_tab.twitter">
+			<source>Twitter</source>
+		</trans-unit>
+		<trans-unit id="plugin_title">
+			<source>Shariff Social Icons</source>
+		</trans-unit>
+		</body>
+	</file>
 </xliff>
