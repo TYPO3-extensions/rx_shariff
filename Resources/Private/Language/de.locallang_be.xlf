@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-11-04T12:09:08Z">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-11-04T12:34:34Z">
 		<header>
 			<authorName>Markus Klein</authorName>
 			<authorEmail>support@reelworx.at</authorEmail>
@@ -10,6 +10,14 @@
 		<trans-unit id="flexforms_general.enabledBackend" approved="yes">
 			<source>Enable Shariff Backend (Show share count)</source>
 			<target>Shariff Backend aktivieren (Geteilt-Anzahl anzeigen)</target>
+		</trans-unit>
+		<trans-unit id="flexforms_general.flattr.category" approved="yes">
+			<source>Flattr category</source>
+			<target>Flattr Kategorie</target>
+		</trans-unit>
+		<trans-unit id="flexforms_general.flattr.user" approved="yes">
+			<source>Flattr user</source>
+			<target>Flattr Benutzer</target>
 		</trans-unit>
 		<trans-unit id="flexforms_general.lang" approved="yes">
 			<source>Language (ISO-2 code)</source>
@@ -131,6 +139,10 @@
 		<trans-unit id="flexforms_general.url" approved="yes">
 			<source>The canonical URL of the page to share. (empty for current URL)</source>
 			<target>Die kanonisch URL der zu teilenden Seite. (leer für aktuelle URL)</target>
+		</trans-unit>
+		<trans-unit id="flexforms_tab.flattr" approved="yes">
+			<source>Flattr</source>
+			<target>Flattr</target>
 		</trans-unit>
 		<trans-unit id="flexforms_tab.mail" approved="yes">
 			<source>Mail</source>

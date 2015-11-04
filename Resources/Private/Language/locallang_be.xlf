@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-04T12:09:08Z">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-04T12:34:34Z">
 		<header>
 			<authorName>Markus Klein</authorName>
 			<authorEmail>support@reelworx.at</authorEmail>
@@ -9,6 +9,12 @@
 		<body>
 		<trans-unit id="flexforms_general.enabledBackend">
 			<source>Enable Shariff Backend (Show share count)</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.flattr.category">
+			<source>Flattr category</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.flattr.user">
+			<source>Flattr user</source>
 		</trans-unit>
 		<trans-unit id="flexforms_general.lang">
 			<source>Language (ISO-2 code)</source>
@@ -100,6 +106,9 @@
 		</trans-unit>
 		<trans-unit id="flexforms_general.url">
 			<source>The canonical URL of the page to share. (empty for current URL)</source>
+		</trans-unit>
+		<trans-unit id="flexforms_tab.flattr">
+			<source>Flattr</source>
 		</trans-unit>
 		<trans-unit id="flexforms_tab.mail">
 			<source>Mail</source>

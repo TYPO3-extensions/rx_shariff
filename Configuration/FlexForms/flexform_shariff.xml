@@ -96,7 +96,8 @@
 		<services>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_tab.services
+					<sheetTitle>
+						LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_tab.services
 					</sheetTitle>
 				</TCEforms>
 				<type>array</type>
@@ -241,6 +242,39 @@
 				</el>
 			</ROOT>
 		</pinterest>
+		<flattr>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_tab.flattr
+					</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.data.flattr-category>
+						<TCEforms>
+							<label>
+								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.flattr.category
+							</label>
+							<config>
+								<type>input</type>
+								<size>20</size>
+							</config>
+						</TCEforms>
+					</settings.data.flattr-category>
+					<settings.data.flattr-user>
+						<TCEforms>
+							<label>
+								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.flattr.user
+							</label>
+							<config>
+								<type>input</type>
+								<size>20</size>
+							</config>
+						</TCEforms>
+					</settings.data.flattr-user>
+				</el>
+			</ROOT>
+		</flattr>
 		<mail>
 			<ROOT>
 				<TCEforms>
