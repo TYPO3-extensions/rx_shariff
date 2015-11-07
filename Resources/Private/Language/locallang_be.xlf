@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-04T12:34:34Z">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-07T14:29:20Z">
 		<header>
 			<authorName>Markus Klein</authorName>
 			<authorEmail>support@reelworx.at</authorEmail>
@@ -73,6 +73,15 @@
 		</trans-unit>
 		<trans-unit id="flexforms_general.services.pinterest">
 			<source>Pinterest</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.reddit">
+			<source>Reddit</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.stumbleupon">
+			<source>StumbleUpon</source>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.threema">
+			<source>Threema</source>
 		</trans-unit>
 		<trans-unit id="flexforms_general.services.tumblr">
 			<source>Tumblr</source>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-11-04T12:34:34Z">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2015-11-07T14:29:20Z">
 		<header>
 			<authorName>Markus Klein</authorName>
 			<authorEmail>support@reelworx.at</authorEmail>
@@ -95,6 +95,18 @@
 		<trans-unit id="flexforms_general.services.pinterest" approved="yes">
 			<source>Pinterest</source>
 			<target>Pinterest</target>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.reddit" approved="yes">
+			<source>Reddit</source>
+			<target>Reddit</target>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.stumbleupon" approved="yes">
+			<source>StumbleUpon</source>
+			<target>StumbleUpon</target>
+		</trans-unit>
+		<trans-unit id="flexforms_general.services.threema" approved="yes">
+			<source>Threema</source>
+			<target>Threema</target>
 		</trans-unit>
 		<trans-unit id="flexforms_general.services.tumblr" approved="yes">
 			<source>Tumblr</source>

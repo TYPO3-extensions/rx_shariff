@@ -193,6 +193,24 @@
 										</numIndex>
 										<numIndex index="1">info</numIndex>
 									</numIndex>
+									<numIndex index="13" type="array">
+										<numIndex index="0">
+											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.reddit
+										</numIndex>
+										<numIndex index="1">reddit</numIndex>
+									</numIndex>
+									<numIndex index="14" type="array">
+										<numIndex index="0">
+											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.stumbleupon
+										</numIndex>
+										<numIndex index="1">stumbleupon</numIndex>
+									</numIndex>
+									<numIndex index="15" type="array">
+										<numIndex index="0">
+											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.threema
+										</numIndex>
+										<numIndex index="1">threema</numIndex>
+									</numIndex>
 								</items>
 							</config>
 						</TCEforms>
