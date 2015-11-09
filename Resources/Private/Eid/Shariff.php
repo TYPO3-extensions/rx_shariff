@@ -10,4 +10,4 @@
  *
  */
 
-(new \Reelworx\RxShariff\Shariff())->render();
+(new \Reelworx\RxShariff\Shariff())->processRequestLegacy();

@@ -15,6 +15,8 @@ namespace Reelworx\RxShariff;
 require_once __DIR__ . '/../Resources/Private/Shariff/vendor/autoload.php';
 
 use Heise\Shariff\Backend;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
@@ -24,8 +26,41 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
  */
 class Shariff
 {
+    /**
+     * Process request
+     *
+     * @param ServerRequestInterface $request
+     * @param ResponseInterface $response
+     * @return null|ResponseInterface
+     */
+    public function processRequest(ServerRequestInterface $request, ResponseInterface $response)
+    {
+        $url = !empty($request->getQueryParams()['url'])
+            ? $request->getQueryParams()['url']
+            : (string)$_SERVER['HTTP_REFERER'];
 
-    public function render()
+        $response = $response->withHeader('Content-type', 'application/json');
+        $response->getBody()->write(json_encode($this->render($url)));
+        return $response;
+    }
+
+    /**
+     * Legacy request handling with direct access to GET parameters
+     */
+    public function processRequestLegacy() {
+        $url = !empty($_GET['url']) ? $_GET['url'] : (string)$_SERVER['HTTP_REFERER'];
+
+        header('Content-type: application/json');
+        echo json_encode($this->render($url));
+    }
+
+    /**
+     * Retrieve the stats from the services
+     *
+     * @param string $url URL for which stats should be queried
+     * @return array Array of results
+     */
+    protected function render($url)
     {
         $extensionConfiguration = array(
             'services' => 'GooglePlus, Twitter, Facebook, LinkedIn, Reddit, StumbleUpon, Flattr, Pinterest, Xing, AddThis',
@@ -52,12 +87,7 @@ class Shariff
             );
         }
 
-        $url = !empty($_GET['url']) ? $_GET['url'] : (string)$_SERVER['HTTP_REFERER'];
-
         $shariff = new Backend($configuration);
-        $result = $shariff->get($url);
-
-        header('Content-type: application/json');
-        echo json_encode($result);
+        return $shariff->get($url);
     }
 }

@@ -14,6 +14,7 @@ Version 4.1.0
 -------------
 
 * Updated shariff to version 1.21.0
+* PSR-7 compliant eID handling for CMS 7
 
 
 Version 4.0.0
