@@ -130,7 +130,6 @@ return array(
     'Heise\\Shariff\\Backend\\ServiceFactory' => $baseDir . '/src/Backend/ServiceFactory.php',
     'Heise\\Shariff\\Backend\\ServiceInterface' => $baseDir . '/src/Backend/ServiceInterface.php',
     'Heise\\Shariff\\Backend\\StumbleUpon' => $baseDir . '/src/Backend/StumbleUpon.php',
-    'Heise\\Shariff\\Backend\\Twitter' => $baseDir . '/src/Backend/Twitter.php',
     'Heise\\Shariff\\Backend\\Xing' => $baseDir . '/src/Backend/Xing.php',
     'Heise\\Shariff\\CacheInterface' => $baseDir . '/src/CacheInterface.php',
     'React\\Promise\\CancellablePromiseInterface' => $vendorDir . '/react/promise/src/CancellablePromiseInterface.php',

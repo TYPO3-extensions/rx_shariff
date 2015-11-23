@@ -9,6 +9,12 @@
 Change Log
 ==========
 
+Version 5.0.0
+-------------
+
+* Updated to shariff-backend version 2.0.0
+* Removed Twitter support for backend due to termination of the API by Twitter.
+
 
 Version 4.1.0
 -------------

@@ -63,7 +63,7 @@ class Shariff
     protected function render($url)
     {
         $extensionConfiguration = array(
-            'services' => 'GooglePlus, Twitter, Facebook, LinkedIn, Reddit, StumbleUpon, Flattr, Pinterest, Xing, AddThis',
+            'services' => 'GooglePlus, Facebook, LinkedIn, Reddit, StumbleUpon, Flattr, Pinterest, Xing, AddThis',
             'facebook_app_id' => '',
             'facebook_secret' => '',
         );
@@ -72,8 +72,14 @@ class Shariff
             $extensionConfiguration = array_replace($extensionConfiguration, $userExtensionConfiguration);
         }
 
+        $serviceArray = GeneralUtility::trimExplode(',', $extensionConfiguration['services']);
+        // filter Twitter, which has been removed
+        $serviceArray = array_filter($serviceArray, function ($value) {
+            return strtolower($value) !== 'twitter';
+        });
+
         $configuration = array(
-            'services' => GeneralUtility::trimExplode(',', $extensionConfiguration['services']),
+            'services' => $serviceArray,
             'cacheClass' => 'Reelworx\\RxShariff\\Cache',
             'cache' => [
                 'ttl' => (int)$extensionConfiguration['ttl'],
