@@ -32,14 +32,12 @@
 								<default>horizontal</default>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.orientation.horizontal
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.orientation.horizontal
 										</numIndex>
 										<numIndex index="1">horizontal</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.orientation.vertical
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.orientation.vertical
 										</numIndex>
 										<numIndex index="1">vertical</numIndex>
 									</numIndex>
@@ -49,8 +47,7 @@
 					</settings.data.orientation>
 					<settings.data.theme>
 						<TCEforms>
-							<label>
-								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.theme
+							<label>LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.theme
 							</label>
 							<config>
 								<type>select</type>
@@ -58,20 +55,17 @@
 								<default>standard</default>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.theme.standard
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.theme.standard
 										</numIndex>
 										<numIndex index="1">standard</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.theme.grey
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.theme.grey
 										</numIndex>
 										<numIndex index="1">grey</numIndex>
 									</numIndex>
 									<numIndex index="2" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.theme.white
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.theme.white
 										</numIndex>
 										<numIndex index="1">white</numIndex>
 									</numIndex>
@@ -81,8 +75,7 @@
 					</settings.data.theme>
 					<settings.data.lang>
 						<TCEforms>
-							<label>
-								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.lang
+							<label>LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.lang
 							</label>
 							<config>
 								<type>input</type>
@@ -97,119 +90,100 @@
 		<services>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>
-						LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_tab.services
+					<sheetTitle>LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_tab.services
 					</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 					<settings.data.services>
 						<TCEforms>
-							<label>
-								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services
+							<label>LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services
 							</label>
 							<config>
 								<type>select</type>
-								<multiple>1</multiple>
 								<renderType>selectCheckBox</renderType>
-								<size>14</size>
-								<maxitems>13</maxitems>
+								<size>17</size>
+								<maxitems>16</maxitems>
 								<items>
 									<numIndex index="0" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.twitter
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.twitter
 										</numIndex>
 										<numIndex index="1">twitter</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.facebook
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.facebook
 										</numIndex>
 										<numIndex index="1">facebook</numIndex>
 									</numIndex>
 									<numIndex index="2" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.googleplus
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.googleplus
 										</numIndex>
 										<numIndex index="1">googleplus</numIndex>
 									</numIndex>
 									<numIndex index="3" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.linkedin
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.linkedin
 										</numIndex>
 										<numIndex index="1">linkedin</numIndex>
 									</numIndex>
 									<numIndex index="4" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.xing
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.xing
 										</numIndex>
 										<numIndex index="1">xing</numIndex>
 									</numIndex>
 									<numIndex index="5" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.pinterest
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.pinterest
 										</numIndex>
 										<numIndex index="1">pinterest</numIndex>
 									</numIndex>
 									<numIndex index="6" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.whatsapp
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.whatsapp
 										</numIndex>
 										<numIndex index="1">whatsapp</numIndex>
 									</numIndex>
 									<numIndex index="7" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.mail
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.mail
 										</numIndex>
 										<numIndex index="1">mail</numIndex>
 									</numIndex>
 									<numIndex index="8" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.addthis
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.addthis
 										</numIndex>
 										<numIndex index="1">addthis</numIndex>
 									</numIndex>
 									<numIndex index="9" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.tumblr
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.tumblr
 										</numIndex>
 										<numIndex index="1">tumblr</numIndex>
 									</numIndex>
 									<numIndex index="10" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.flattr
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.flattr
 										</numIndex>
 										<numIndex index="1">flattr</numIndex>
 									</numIndex>
 									<numIndex index="11" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.diaspora
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.diaspora
 										</numIndex>
 										<numIndex index="1">diaspora</numIndex>
 									</numIndex>
 									<numIndex index="12" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.info
-										</numIndex>
-										<numIndex index="1">info</numIndex>
-									</numIndex>
-									<numIndex index="13" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.reddit
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.reddit
 										</numIndex>
 										<numIndex index="1">reddit</numIndex>
 									</numIndex>
-									<numIndex index="14" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.stumbleupon
+									<numIndex index="13" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.stumbleupon
 										</numIndex>
 										<numIndex index="1">stumbleupon</numIndex>
 									</numIndex>
-									<numIndex index="15" type="array">
-										<numIndex index="0">
-											LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.threema
+									<numIndex index="14" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.threema
 										</numIndex>
 										<numIndex index="1">threema</numIndex>
+									</numIndex>
+									<numIndex index="15" type="array">
+										<numIndex index="0">LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.services.info
+										</numIndex>
+										<numIndex index="1">info</numIndex>
 									</numIndex>
 								</items>
 							</config>
@@ -228,8 +202,7 @@
 				<el>
 					<settings.data.twitter-via>
 						<TCEforms>
-							<label>
-								LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.twittername
+							<label>LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.twittername
 							</label>
 							<config>
 								<type>input</type>
