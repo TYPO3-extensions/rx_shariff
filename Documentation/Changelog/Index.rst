@@ -9,6 +9,12 @@
 Change Log
 ==========
 
+Version 5.0.1
+-------------
+
+* Fix various issues with FlexForms
+
+
 Version 5.0.0
 -------------
 
