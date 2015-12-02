@@ -1,7 +1,7 @@
 <?php
 /*
  *
- * This file is part of the COMOT Extension for TYPO3 CMS.
+ * This file is part of the rx_shariff Extension for TYPO3 CMS.
  *
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
