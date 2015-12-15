@@ -2,7 +2,7 @@
 defined('TYPO3_MODE') || die();
 
 if (\TYPO3\CMS\Core\Utility\GeneralUtility::compat_version('7.5')) {
-    $GLOBALS['TYPO3_CONF_VARS']['FE']['eID_include']['shariff'] = \Reelworx\RxShariff\Shariff::class . '::processRequest';
+    $GLOBALS['TYPO3_CONF_VARS']['FE']['eID_include']['shariff'] = 'Reelworx\\RxShariff\\Shariff::processRequest';
 } else {
     $GLOBALS['TYPO3_CONF_VARS']['FE']['eID_include']['shariff'] = 'EXT:rx_shariff/Resources/Private/Eid/Shariff.php';
 }

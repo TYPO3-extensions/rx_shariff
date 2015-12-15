@@ -9,6 +9,12 @@
 Change Log
 ==========
 
+Version 5.0.2
+-------------
+
+* Fix PHP syntax error in PHP < 5.4
+
+
 Version 5.0.1
 -------------
 
