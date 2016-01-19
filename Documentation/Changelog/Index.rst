@@ -9,6 +9,12 @@
 Change Log
 ==========
 
+Version 5.1.1
+-------------
+
+* Fix URL encoding of Facebook again
+
+
 Version 5.1.0
 -------------
 

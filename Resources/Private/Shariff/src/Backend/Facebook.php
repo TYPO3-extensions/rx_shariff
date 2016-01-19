@@ -25,9 +25,10 @@ class Facebook extends Request implements ServiceInterface
     {
         $accessToken = $this->getAccessToken();
         if (null !== $accessToken) {
-            $query = 'https://graph.facebook.com/v2.2/?id=' . urlencode($url) . '&' . urlencode($accessToken);
+            $query = 'https://graph.facebook.com/v2.2/?id=' . urlencode($url) . '&' . $accessToken;
         } else {
-            $query = 'https://graph.facebook.com/fql?q=' . urlencode('SELECT total_count FROM link_stat WHERE url="'.$url.'"');
+            $query = 'https://graph.facebook.com/fql?q='
+                     . urlencode('SELECT total_count FROM link_stat WHERE url="'.$url.'"');
         }
         return $this->createRequest($query);
     }
