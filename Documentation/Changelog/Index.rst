@@ -9,10 +9,18 @@
 Change Log
 ==========
 
+Version 5.1.0
+-------------
+
+* Updated shariff to version 1.22.0
+* Updated to shariff-backend version 3.0.1
+* Fix URL encoding issues for some stat providers
+
+
 Version 5.0.2
 -------------
 
-* Fix PHP syntax error in PHP < 5.4
+* Fix PHP syntax error in PHP <= 5.4
 
 
 Version 5.0.1

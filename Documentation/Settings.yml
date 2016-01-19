@@ -4,10 +4,10 @@
 
 ---
 conf.py:
-  copyright: 2015
+  copyright: 2015-2016
   project: Heise Shariff
-  version: 5.0
-  release: 5.0.2
+  version: 5.1
+  release: 5.1.0
   latex_documents:
   - - Index
     - rx_shariff.tex
@@ -21,11 +21,5 @@ conf.py:
   intersphinx_mapping:
     t3tsref:
     - http://docs.typo3.org/typo3cms/TyposcriptReference/
-    - null
-    t3start:
-    - http://docs.typo3.org/typo3cms/GettingStartedTutorial/
-    - null
-    t3editors:
-    - http://docs.typo3.org/typo3cms/EditorsTutorial/
     - null
 ...

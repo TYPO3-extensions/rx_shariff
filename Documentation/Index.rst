@@ -24,7 +24,8 @@ Heise Shariff
 		en
 
 	:Description:
-		The rx_shariff extension provides the shariff data backend to retrieve social media stats.
+		The rx_shariff extension provides easy integration of Heise Shariff into TYPO3 CMS and includes the frontend
+		scripts as well as the PHP data backend to retrieve social media stats.
 
 	:Keywords:
 		Social Media, JavaScript, GooglePlus, Twitter, Facebook, LinkedIn, Reddit, StumbleUpon, Flattr, Pinterest, Xing
@@ -36,7 +37,7 @@ Heise Shariff
 		Markus Klein
 
 	:Email:
-		office@reelworx.at
+		support@reelworx.at
 
 	:License:
 		This document is published under the Open Content License
