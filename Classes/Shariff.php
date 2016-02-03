@@ -85,12 +85,16 @@ class Shariff
                 'ttl' => (int)$extensionConfiguration['ttl'],
             ],
         );
-
-        if (in_array('Facebook', $configuration['services'], true)) {
-            $configuration['Facebook'] = array(
-                'app_id' => $extensionConfiguration['facebook_app_id'],
-                'secret' => $extensionConfiguration['facebook_secret'],
-            );
+        $facebookKey = array_search('Facebook', $configuration['services'], true);
+        if ($facebookKey !== FALSE) {
+            if (empty($extensionConfiguration['facebook_app_id']) || empty($extensionConfiguration['facebook_secret'])) {
+                unset($configuration['services'][$facebookKey]);
+            } else {
+                $configuration['Facebook'] = array(
+                    'app_id' => $extensionConfiguration['facebook_app_id'],
+                    'secret' => $extensionConfiguration['facebook_secret'],
+                );
+            }
         }
 
         $shariff = new Backend($configuration);
