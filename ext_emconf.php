@@ -12,7 +12,7 @@ $EM_CONF['rx_shariff'] = array(
     'author_company' => 'Reelworx GmbH',
     'constraints' => array(
         'depends' => array(
-            'php' => '5.4.0-5.6.99',
+            'php' => '5.5.0-7.0.99',
             'typo3' => '6.2.9-7.99.99',
         ),
         'conflicts' => array(),

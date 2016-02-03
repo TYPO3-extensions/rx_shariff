@@ -5,11 +5,10 @@ namespace Heise\Shariff;
 use GuzzleHttp\Client;
 use Heise\Shariff\Backend\BackendManager;
 use Heise\Shariff\Backend\ServiceFactory;
+use Psr\Log\LoggerInterface;
 
 /**
- * Class Backend
- *
- * @package Heise\Shariff
+ * Class Backend.
  */
 class Backend
 {
@@ -48,10 +47,19 @@ class Backend
 
     /**
      * @param string $url
+     *
      * @return array
      */
     public function get($url)
     {
         return $this->backendManager->get($url);
+    }
+
+    /**
+     * @param LoggerInterface $logger
+     */
+    public function setLogger(LoggerInterface $logger)
+    {
+        $this->backendManager->setLogger($logger);
     }
 }

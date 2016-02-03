@@ -9,6 +9,13 @@
 Change Log
 ==========
 
+Version 6.0.0
+-------------
+
+* Updated shariff-backend to version 5.0.0
+* Attention: PHP support is now 5.5 - 7.0
+
+
 Version 5.2.0
 -------------
 

@@ -2,14 +2,15 @@
 
 namespace Heise\Shariff\Backend;
 
-use GuzzleHttp\Client;
+use GuzzleHttp\ClientInterface;
+use GuzzleHttp\Exception\TransferException;
 use GuzzleHttp\Pool;
 use Heise\Shariff\CacheInterface;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Log\LoggerInterface;
 
 /**
- * Class BackendManager
- *
- * @package Heise\Shariff\Backend
+ * Class BackendManager.
  */
 class BackendManager
 {
@@ -19,7 +20,7 @@ class BackendManager
     /** @var CacheInterface */
     protected $cache;
 
-    /** @var Client */
+    /** @var ClientInterface */
     protected $client;
 
     /** @var string */
@@ -28,14 +29,17 @@ class BackendManager
     /** @var ServiceInterface[] */
     protected $services;
 
+    /** @var LoggerInterface */
+    protected $logger;
+
     /**
-     * @param string $baseCacheKey
-     * @param CacheInterface $cache
-     * @param Client $client
-     * @param string $domain
+     * @param string             $baseCacheKey
+     * @param CacheInterface     $cache
+     * @param ClientInterface    $client
+     * @param string             $domain
      * @param ServiceInterface[] $services
      */
-    public function __construct($baseCacheKey, CacheInterface $cache, Client $client, $domain, array $services)
+    public function __construct($baseCacheKey, CacheInterface $cache, ClientInterface $client, $domain, array $services)
     {
         $this->baseCacheKey = $baseCacheKey;
         $this->cache = $cache;
@@ -46,21 +50,32 @@ class BackendManager
 
     /**
      * @param string $url
+     *
      * @return bool
      */
     private function isValidDomain($url)
     {
         if ($this->domain) {
             $parsed = parse_url($url);
-            if ($parsed["host"] != $this->domain) {
+            if ($parsed['host'] != $this->domain) {
                 return false;
             }
         }
+
         return true;
     }
 
     /**
+     * @param LoggerInterface $logger
+     */
+    public function setLogger(LoggerInterface $logger = null)
+    {
+        $this->logger = $logger;
+    }
+
+    /**
      * @param string $url
+     *
      * @return array|mixed|null
      */
     public function get($url)
@@ -70,7 +85,7 @@ class BackendManager
         $cache_key = md5($url.$this->baseCacheKey);
 
         if (!filter_var($url, FILTER_VALIDATE_URL)) {
-            return null;
+            return;
         }
 
         if ($this->cache->hasItem($cache_key)) {
@@ -78,30 +93,38 @@ class BackendManager
         }
 
         if (!$this->isValidDomain($url)) {
-            return null;
+            return;
         }
 
         $requests = array_map(
             function ($service) use ($url) {
-                /** @var ServiceInterface $service */
+                /* @var ServiceInterface $service */
                 return $service->getRequest($url);
             },
             $this->services
         );
 
+        /** @var ResponseInterface[] $results */
         $results = Pool::batch($this->client, $requests);
 
-        $counts = array();
+        $counts = [];
         $i = 0;
         foreach ($this->services as $service) {
-            if (method_exists($results[$i], "json")) {
-                try {
-                    $counts[ $service->getName() ] = (int)$service->extractCount($results[$i]->json());
-                } catch (\Exception $e) {
-                    // Skip service if broken
+            if ($results[$i] instanceof TransferException) {
+                if ($this->logger !== null) {
+                    $this->logger->warning($results[$i]->getMessage(), ['exception' => $results[$i]]);
                 }
+            } else {
+                try {
+                    $content = $service->filterResponse($results[$i]->getBody()->getContents());
+                    $counts[$service->getName()] = (int) $service->extractCount(json_decode($content, true));
+                } catch (\Exception $e) {
+                    if ($this->logger !== null) {
+                        $this->logger->warning($e->getMessage(), ['exception' => $e]);
+                    }
+                }
+                ++$i;
             }
-            $i++;
         }
 
         $this->cache->setItem($cache_key, json_encode($counts));
