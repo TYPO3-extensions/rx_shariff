@@ -11,9 +11,9 @@ if (!isset($GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['rx_shariff'] = [
         'frontend' => 'TYPO3\\CMS\\Core\\Cache\\Frontend\\StringFrontend',
         'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\SimpleFileBackend',
-        'options' => array(
+        'options' => [
             'defaultLifetime' => 60,
-        ),
+        ],
         'groups' => ['pages', 'all'],
     ];
 }
@@ -21,8 +21,6 @@ if (!isset($GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
     'Reelworx.RxShariff',
     'Shariff',
-    array(
-        'Shariff' => 'index',
-    ),
-    array()
+    ['Shariff' => 'index'],
+    []
 );

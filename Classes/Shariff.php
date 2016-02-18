@@ -62,11 +62,11 @@ class Shariff
      */
     protected function render($url)
     {
-        $extensionConfiguration = array(
+        $extensionConfiguration = [
             'services' => 'GooglePlus, Facebook, LinkedIn, Reddit, StumbleUpon, Flattr, Pinterest, Xing, AddThis',
             'facebook_app_id' => '',
             'facebook_secret' => '',
-        );
+        ];
         $userExtensionConfiguration = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['rx_shariff']);
         if (is_array($userExtensionConfiguration)) {
             $extensionConfiguration = array_replace($extensionConfiguration, $userExtensionConfiguration);
@@ -88,23 +88,23 @@ class Shariff
             $allowedDomains = GeneralUtility::trimExplode(',', $extensionConfiguration['allowedDomains'], true);
         }
 
-        $configuration = array(
+        $configuration = [
             'services' => $serviceArray,
             'domains' => $allowedDomains,
             'cacheClass' => Cache::class,
             'cache' => [
                 'ttl' => (int)$extensionConfiguration['ttl'],
             ],
-        );
+        ];
         $facebookKey = array_search('Facebook', $configuration['services'], true);
         if ($facebookKey !== false) {
             if (empty($extensionConfiguration['facebook_app_id']) || empty($extensionConfiguration['facebook_secret'])) {
                 unset($configuration['services'][$facebookKey]);
             } else {
-                $configuration['Facebook'] = array(
+                $configuration['Facebook'] = [
                     'app_id' => $extensionConfiguration['facebook_app_id'],
                     'secret' => $extensionConfiguration['facebook_secret'],
-                );
+                ];
             }
         }
 
