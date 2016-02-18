@@ -1,6 +1,6 @@
 <?php
 
-$EM_CONF['rx_shariff'] = array(
+$EM_CONF[$_EXTKEY] = array(
     'title' => 'Heise Shariff',
     'description' => 'Shariff implementation for TYPO3 CMS including the backend module, a viewhelper and a plugin.',
     'category' => 'plugin',
