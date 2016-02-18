@@ -1,5 +1,7 @@
 # cat=basic/other/a; type=string; label=Services to query:Comma-separated list of services to query for the stats. Available services are GooglePlus, Facebook, LinkedIn, Reddit, StumbleUpon, Flattr, Pinterest, Xing, AddThis
 services = GooglePlus, Facebook, LinkedIn, Reddit, StumbleUpon, Flattr, Pinterest, Xing, AddThis
+# cat basic/other/c; type=string; label=Allowed domains:Comma-separated list of domains that should be allowed for stat querying. Set this to the domains your instance handles. The default setting "SERVER_NAME" limits the allowed requests to the current domain. (An empty value allows any domain. NOT recommended.)
+allowedDomains = SERVER_NAME
 # cat=basic/other/b; type=int+; label=TTL for the cache in seconds
 ttl = 60
 # cat=advanced/other/a; type=string; label=Facebook application id

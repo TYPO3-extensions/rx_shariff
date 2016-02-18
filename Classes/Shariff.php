@@ -78,15 +78,26 @@ class Shariff
             return strtolower($value) !== 'twitter';
         });
 
+        $allowedDomains = [];
+        if (!isset($extensionConfiguration['allowedDomains']) || $extensionConfiguration['allowedDomains'] === 'SERVER_NAME') {
+            $defaultPort = GeneralUtility::getIndpEnv('TYPO3_SSL') ? '443' : '80';
+            if (strtolower($_SERVER['HTTP_HOST']) === strtolower($_SERVER['SERVER_NAME']) && $defaultPort === $_SERVER['SERVER_PORT']) {
+                $allowedDomains[] = strtolower($_SERVER['SERVER_NAME']);
+            }
+        } else {
+            $allowedDomains = GeneralUtility::trimExplode(',', $extensionConfiguration['allowedDomains'], true);
+        }
+
         $configuration = array(
             'services' => $serviceArray,
-            'cacheClass' => 'Reelworx\\RxShariff\\Cache',
+            'domains' => $allowedDomains,
+            'cacheClass' => Cache::class,
             'cache' => [
                 'ttl' => (int)$extensionConfiguration['ttl'],
             ],
         );
         $facebookKey = array_search('Facebook', $configuration['services'], true);
-        if ($facebookKey !== FALSE) {
+        if ($facebookKey !== false) {
             if (empty($extensionConfiguration['facebook_app_id']) || empty($extensionConfiguration['facebook_secret'])) {
                 unset($configuration['services'][$facebookKey]);
             } else {

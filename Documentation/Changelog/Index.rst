@@ -9,6 +9,14 @@
 Change Log
 ==========
 
+Version 7.0.0
+-------------
+
+* BREAKING: All URLs are now checked against the "allowedDomains" setting of the extension.
+  By default this the local server name only. If your run more domains you need configure this setting accordingly.
+* Update shariff-backend to version 5.1.0
+
+
 Version 6.0.0
 -------------
 
