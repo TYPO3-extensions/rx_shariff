@@ -9,6 +9,12 @@
 Change Log
 ==========
 
+Version 7.0.1
+-------------
+
+* Fix "domains" settings not shown in EM
+
+
 Version 7.0.0
 -------------
 
