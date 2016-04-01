@@ -27,16 +27,19 @@ abstract class Request
     /**
      * @param string $url
      * @param string $method
-     * @param array  $options
+     * @param array  $options This parameter is ignored and is only present for backwards compatibility reasons.
      *
      * @return RequestInterface
+     *
+     * @deprecated This method is not used anymore and will be removed with version 6.
+     *             Use \GuzzleHttp\Psr7\Request directly instead.
      */
     protected function createRequest($url, $method = 'GET', $options = [])
     {
-        // $defaults = array('future' => true, 'debug' => true);
-        $defaults = ['future' => true, 'timeout' => 5.0];
+        trigger_error('This method is not used anymore and will be removed with version 6.'
+                    .' Use \GuzzleHttp\Psr7\Request directly instead.', E_USER_DEPRECATED);
 
-        return new \GuzzleHttp\Psr7\Request($method, $url, array_merge($defaults, $options));
+        return new \GuzzleHttp\Psr7\Request($method, $url);
     }
 
     /**
