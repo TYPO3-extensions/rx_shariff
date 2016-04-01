@@ -9,6 +9,12 @@
 Change Log
 ==========
 
+Version 7.0.2
+-------------
+
+* Update shariff-backend to version 5.2.3
+
+
 Version 7.0.1
 -------------
 
