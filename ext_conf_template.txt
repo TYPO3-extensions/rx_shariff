@@ -2,8 +2,8 @@
 services = GooglePlus, Facebook, LinkedIn, Reddit, StumbleUpon, Flattr, Pinterest, Xing, AddThis
 # cat=basic/other/c; type=string; label=Allowed domains:Comma-separated list of domains that should be allowed for stat querying. Set this to the domains your instance handles. The default setting "SERVER_NAME" limits the allowed requests to the current domain. (An empty value allows any domain. NOT recommended.)
 allowedDomains = SERVER_NAME
-# cat=basic/other/b; type=int+; label=TTL for the cache in seconds
-ttl = 60
+# cat=basic/other/b; type=int+; label=TTL for the cache in seconds (0 means unlimited)
+ttl = 3600
 # cat=advanced/other/a; type=string; label=Facebook application id
 facebook_app_id =
 # cat=advanced/other/b; type=string; label=Facebook API secret

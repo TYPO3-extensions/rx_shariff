@@ -12,7 +12,7 @@ if (!isset($GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][
         'frontend' => \TYPO3\CMS\Core\Cache\Frontend\StringFrontend::class,
         'backend' => \TYPO3\CMS\Core\Cache\Backend\SimpleFileBackend::class,
         'options' => [
-            'defaultLifetime' => 60,
+            'defaultLifetime' => 3600,
         ],
         'groups' => ['pages', 'all'],
     ];
