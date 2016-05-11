@@ -41,6 +41,19 @@ class ShariffViewHelper extends AbstractTagBasedViewHelper
     }
 
     /**
+     * Initialize arguments.
+     *
+     * @return void
+     */
+    public function initializeArguments()
+    {
+        parent::initializeArguments();
+        $this->registerUniversalTagAttributes();
+        $this->registerTagAttribute('services', 'string', 'Comma separated list of services', false);
+        $this->registerTagAttribute('enableBackend', 'bool', 'Enable the Shariff Backend module and show stats', false, false);
+    }
+
+    /**
      * Add data attribute handling for CMS 6.2
      */
     public function initialize()
@@ -58,18 +71,17 @@ class ShariffViewHelper extends AbstractTagBasedViewHelper
     }
 
     /**
-     * @param string $services comma separated list of services
-     * @param bool $enableBackend
      * @return string
      */
-    public function render($services = null, $enableBackend = true)
+    public function render()
     {
-        if ($enableBackend) {
+        if (!empty($this->arguments['enableBackend'])) {
             $url = $this->controllerContext->getUriBuilder()->reset()->setUseCacheHash(false)
                                            ->setArguments(['eID' => 'shariff'])->buildFrontendUri();
             $this->tag->addAttribute('data-backend-url', $url);
         }
 
+        $services = $this->arguments['services'];
         if ($services !== null) {
             $this->tag->addAttribute(
                 'data-services',

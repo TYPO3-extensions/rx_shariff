@@ -9,6 +9,12 @@
 Change Log
 ==========
 
+Version 7.1.0
+-------------
+
+* Allow the usage of universal tag attributes on the view helper
+
+
 Version 7.0.2
 -------------
 
