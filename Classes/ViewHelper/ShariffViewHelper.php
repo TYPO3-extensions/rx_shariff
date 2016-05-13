@@ -50,7 +50,7 @@ class ShariffViewHelper extends AbstractTagBasedViewHelper
         parent::initializeArguments();
         $this->registerUniversalTagAttributes();
         $this->registerTagAttribute('services', 'string', 'Comma separated list of services', false);
-        $this->registerTagAttribute('enableBackend', 'bool', 'Enable the Shariff Backend module and show stats', false, false);
+        $this->registerTagAttribute('enableBackend', 'boolean', 'Enable the Shariff Backend module and show stats', false, false);
     }
 
     /**
@@ -75,7 +75,7 @@ class ShariffViewHelper extends AbstractTagBasedViewHelper
      */
     public function render()
     {
-        if (!empty($this->arguments['enableBackend'])) {
+        if ($this->arguments['enableBackend']) {
             $url = $this->controllerContext->getUriBuilder()->reset()->setUseCacheHash(false)
                                            ->setArguments(['eID' => 'shariff'])->buildFrontendUri();
             $this->tag->addAttribute('data-backend-url', $url);
