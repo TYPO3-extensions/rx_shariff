@@ -9,6 +9,12 @@
 Change Log
 ==========
 
+Version 7.1.1
+-------------
+
+* Bugfix: Shariff backend can be disabled again when using the viewhelper
+
+
 Version 7.1.0
 -------------
 
