@@ -17,6 +17,7 @@ require_once __DIR__ . '/../Resources/Private/Shariff/vendor/autoload.php';
 use Heise\Shariff\Backend;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
+use TYPO3\CMS\Core\Log\LogManager;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
@@ -109,6 +110,7 @@ class Shariff
         }
 
         $shariff = new Backend($configuration);
+        $shariff->setLogger(GeneralUtility::makeInstance(LogManager::class)->getLogger(__CLASS__));
         return $shariff->get($url);
     }
 }
