@@ -14,6 +14,7 @@ Version
 
 * Fixed a bug which caused too many attributes on the final div tag
 * CMS 8 compatibility
+* The language of the share buttons is chosen according to FE language
 
 
 Version 7.2.0
