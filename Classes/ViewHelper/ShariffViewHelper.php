@@ -49,8 +49,8 @@ class ShariffViewHelper extends AbstractTagBasedViewHelper
     {
         parent::initializeArguments();
         $this->registerUniversalTagAttributes();
-        $this->registerTagAttribute('services', 'string', 'Comma separated list of services', false);
-        $this->registerTagAttribute('enableBackend', 'boolean', 'Enable the Shariff Backend module and show stats', false, false);
+        $this->registerArgument('services', 'string', 'Comma separated list of services', false);
+        $this->registerArgument('enableBackend', 'boolean', 'Enable the Shariff Backend module and show stats', false, false);
     }
 
     /**
