@@ -9,6 +9,13 @@
 Change Log
 ==========
 
+Version 7.2.0
+-------------
+
+* Updated shariff to version 1.24.0
+* Shariff-backend errors are logged to the default TYPO3 log file (typo3temp/(var/)logs/typo3_*.log)
+
+
 Version 7.1.1
 -------------
 

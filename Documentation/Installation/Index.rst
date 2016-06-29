@@ -110,3 +110,10 @@ News integration
 
 You can also easily use this extension within your News extension template.
 Simply paste the viewhelper into your ``Detail.html`` template, include one of the static templates and you are ready to go.
+
+
+Finding the logs
+^^^^^^^^^^^^^^^^
+
+The extension uses the TYPO3 logging facility to log warnings when fetching counts from the various social media platforms.
+If you encounter problems, take a look into the logs.
