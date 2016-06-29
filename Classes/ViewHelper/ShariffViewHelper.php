@@ -15,6 +15,7 @@ namespace Reelworx\RxShariff\ViewHelper;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\VersionNumberUtility;
 use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper;
+use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
 
 /**
  * Class ShariffViewHelper
@@ -87,6 +88,12 @@ class ShariffViewHelper extends AbstractTagBasedViewHelper
                 'data-services',
                 '["' . implode('","', GeneralUtility::trimExplode(',', $services)) . '"]'
             );
+        }
+
+        /** @var TypoScriptFrontendController $tsfe */
+        $tsfe = $GLOBALS['TSFE'];
+        if (!$this->tag->hasAttribute('data-lang') && !empty($tsfe->sys_language_isocode)) {
+            $this->tag->addAttribute('data-lang', $tsfe->sys_language_isocode);
         }
 
         $this->tag->addAttribute('class', 'shariff');

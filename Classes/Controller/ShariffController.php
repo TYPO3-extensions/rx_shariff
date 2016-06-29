@@ -35,6 +35,7 @@ class ShariffController extends ActionController
     {
         $data = $this->settings['data'];
         unset($data['services']);
+        unset($data['lang']);
         foreach ($data as $key => $value) {
             if (trim($value) === '') {
                 unset($data[$key]);

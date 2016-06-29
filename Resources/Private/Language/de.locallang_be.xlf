@@ -19,10 +19,6 @@
 			<source>Flattr user</source>
 			<target>Flattr Benutzer</target>
 		</trans-unit>
-		<trans-unit id="flexforms_general.lang" approved="yes">
-			<source>Language (ISO-2 code)</source>
-			<target>Sprache (ISO-2 code)</target>
-		</trans-unit>
 		<trans-unit id="flexforms_general.mail.mail-body" approved="yes">
 			<source>Bodytext (empty for auto generated content)</source>
 			<target>Inhalt (leer für automatischen Inhalt)</target>

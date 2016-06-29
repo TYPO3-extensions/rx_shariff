@@ -73,17 +73,6 @@
 							</config>
 						</TCEforms>
 					</settings.data.theme>
-					<settings.data.lang>
-						<TCEforms>
-							<label>LLL:EXT:rx_shariff/Resources/Private/Language/locallang_be.xlf:flexforms_general.lang
-							</label>
-							<config>
-								<type>input</type>
-								<size>20</size>
-								<default>en</default>
-							</config>
-						</TCEforms>
-					</settings.data.lang>
 				</el>
 			</ROOT>
 		</sDEF>
