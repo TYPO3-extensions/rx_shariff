@@ -13,6 +13,7 @@
 namespace Reelworx\RxShariff;
 
 use Heise\Shariff\CacheInterface;
+use TYPO3\CMS\Core\Cache\CacheManager;
 use TYPO3\CMS\Core\Cache\Frontend\StringFrontend;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
@@ -34,7 +35,7 @@ class Cache implements CacheInterface
         if (isset($configuration['ttl'])) {
             $this->ttl = (int)$configuration['ttl'];
         }
-        $this->cache = GeneralUtility::makeInstance('TYPO3\\CMS\\Core\\Cache\\CacheManager')->getCache('rx_shariff');
+        $this->cache = GeneralUtility::makeInstance(CacheManager::class)->getCache('rx_shariff');
     }
 
     /**

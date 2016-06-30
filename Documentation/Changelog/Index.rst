@@ -13,6 +13,7 @@ Version
 -------------
 
 * Fixed a bug which caused too many attributes on the final div tag
+* CMS 8 compatibility
 
 
 Version 7.2.0

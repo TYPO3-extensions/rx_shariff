@@ -13,6 +13,7 @@
 namespace Reelworx\RxShariff\ViewHelper;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Utility\VersionNumberUtility;
 use TYPO3\CMS\Fluid\Core\ViewHelper\AbstractTagBasedViewHelper;
 
 /**
@@ -30,7 +31,7 @@ class ShariffViewHelper extends AbstractTagBasedViewHelper
     {
         parent::__construct();
 
-        if (!GeneralUtility::compat_version('7.1')) {
+        if (VersionNumberUtility::convertVersionNumberToInteger(TYPO3_branch) < VersionNumberUtility::convertVersionNumberToInteger('7.1')) {
             $this->registerArgument(
                 'data',
                 'array',
@@ -60,9 +61,8 @@ class ShariffViewHelper extends AbstractTagBasedViewHelper
     {
         parent::initialize();
 
-        if (!GeneralUtility::compat_version('7.1') &&
-            $this->hasArgument('data') &&
-            is_array($this->arguments['data'])
+        if (VersionNumberUtility::convertVersionNumberToInteger(TYPO3_branch) < VersionNumberUtility::convertVersionNumberToInteger('7.1')
+            && $this->hasArgument('data') && is_array($this->arguments['data'])
         ) {
             foreach ($this->arguments['data'] as $dataAttributeKey => $dataAttributeValue) {
                 $this->tag->addAttribute('data-' . $dataAttributeKey, $dataAttributeValue);
