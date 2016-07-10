@@ -16,6 +16,17 @@ Known issues
 None, at the moment.
 
 
+Translations
+------------
+
+The extension may be translated on the official TYPO3 translation server.
+Reelworx maintains the English and German translations, all other translations are very welcome.
+
+Keep in mind that the labels used on the Shariff buttons do not stem from this extension, but
+are shipped directly by the upstream Shariff library, which already contains quite a few translations.
+The available translations can be found in the project's `readme file <https://github.com/heiseonline/shariff#options-data-attributes>`_.
+
+
 Support
 -------
 
