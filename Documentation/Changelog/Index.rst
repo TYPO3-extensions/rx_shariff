@@ -9,7 +9,7 @@
 Change Log
 ==========
 
-Version
+Version 7.3.0
 -------------
 
 * Fixed a bug which caused too many attributes on the final div tag
