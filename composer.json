@@ -11,11 +11,12 @@
 		}
 	],
 	"replace": {
-		"rx_shariff": "*"
+		"rx_shariff": "self.version",
+		"typo3-ter/rx-shariff": "self.version"
 	},
 	"require": {
-		"php": "5.5.0 - 7.0.99",
-		"typo3/cms-core": "6.2.9 - 7.99.99"
+		"php": "5.5.0 - 7.1.99",
+		"typo3/cms-core": "6.2.9 - 8.99.99"
 	},
 	"autoload": {
 		"psr-4": {
