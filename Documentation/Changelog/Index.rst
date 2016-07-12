@@ -9,7 +9,7 @@
 Change Log
 ==========
 
-Version
+Version 7.3.1
 -------------
 
 * Fixed composer.json information to comply with EMCONF
