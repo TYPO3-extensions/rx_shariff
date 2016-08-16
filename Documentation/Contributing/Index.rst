@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../Includes.txt
+﻿.. include:: ../Includes.txt
 
 
 Support and Contributing
@@ -19,7 +14,7 @@ None, at the moment.
 Translations
 ------------
 
-The extension may be translated on the official TYPO3 translation server.
+The extension may be translated on the official `TYPO3 translation server <https://translation.typo3.org/de/TYPO3.ext.rx_shariff/>`_.
 Reelworx maintains the English and German translations, all other translations are very welcome.
 
 Keep in mind that the labels used on the Shariff buttons do not stem from this extension, but

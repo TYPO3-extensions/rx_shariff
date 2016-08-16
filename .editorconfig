@@ -54,8 +54,8 @@ indent_size = 4
 
 # ReST-Files
 [*.rst]
-indent_style = tab
-indent_size = 4
+indent_style = space
+indent_size = 3
 
 # Text-Files
 [*.txt]

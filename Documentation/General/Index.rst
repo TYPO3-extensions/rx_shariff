@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../Includes.txt
+﻿.. include:: ../Includes.txt
 
 
 What does it do?
@@ -16,7 +11,8 @@ The focus of these buttons is to provide more privacy for the website visitor.
 	:width: 400px
 	:alt: Shariff Screenshot
 
-More information about Shariff in general can be found here: https://github.com/heiseonline/shariff
+
+More information about Shariff in general can be found `on github <https://github.com/heiseonline/shariff>`_.
 
 
 Provided components
@@ -31,4 +27,4 @@ Editors can use the provided plugin, to conveniently place the social media butt
 Technically, the backend part is implemented by using a TYPO3 eID script, whose data is loaded by a JS AJAX request
 of the frontend part. The retrieved count values are stored in the TYPO3 cache.
 
-The extension is based on shariff (version 1.24.0) and shariff-backend-php (version 6.0.0).
+The extension is based on `shariff <https://github.com/heiseonline/shariff>`_ (version 1.24.0) and `shariff-backend-php <https://github.com/heiseonline/shariff-backend-php>`_ (version 6.0.0).

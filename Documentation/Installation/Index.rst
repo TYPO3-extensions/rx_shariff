@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../Includes.txt
+﻿.. include:: ../Includes.txt
 
 
 Installation
@@ -36,29 +31,29 @@ jQuery is included by using the local jQuery version shipped with the TYPO3 CMS 
 
 .. note::
 
-	In case you want to integrate the Javascript and CSS in your asset workflow (e.g. gulp or grunt) you don't need
-	to include any static template or TypoScript
+   In case you want to integrate the Javascript and CSS in your asset workflow (e.g. gulp or grunt) you don't need
+   to include any static template or TypoScript
 
 
 If you want, you can also simply integrate them manually in your own page template:
 
-.. code-block:: typoscript
+.. code-block:: ts
 
-	page = PAGE
+   page = PAGE
 
-	page.javascriptLibs.jQuery = 1
-	page.javascriptLibs.jQuery.version = latest
-	page.javascriptLibs.jQuery.source = local
+   page.javascriptLibs.jQuery = 1
+   page.javascriptLibs.jQuery.version = latest
+   page.javascriptLibs.jQuery.source = local
 
-	page.includeJSFooter.shariff = EXT:rx_shariff/Resources/Public/Css/shariff.min.js
-	page.includeCSS.shariff = EXT:rx_shariff/Resources/Public/Css/shariff.min.css
-	# or you may use the following for include font-awesome too
-	# page.includeCSS.shariff = EXT:rx_shariff/Resources/Public/Css/shariff.complete.css
+   page.includeJSFooter.shariff = EXT:rx_shariff/Resources/Public/Css/shariff.min.js
+   page.includeCSS.shariff = EXT:rx_shariff/Resources/Public/Css/shariff.min.css
+   //# or you may use the following for include font-awesome too
+   //# page.includeCSS.shariff = EXT:rx_shariff/Resources/Public/Css/shariff.complete.css
 
 
 .. important::
 
-	The Javascript has to be included in your frontend page in either way, otherwise the usages described below will not work.
+   The Javascript has to be included in your frontend page in either way, otherwise the usages described below will not work.
 
 
 Frontend usage
@@ -73,9 +68,9 @@ Pure TypoScript
 For TypoScript usage, the extension provides a default typolink setup to generate the necessary backend-url.
 The setup can be used like this:
 
-.. code-block:: typoscript
+.. code-block:: ts
 
-	lib.shariffBackendUrl < plugin.rx_shariff.data-backend-url
+   lib.shariffBackendUrl < plugin.rx_shariff.data-backend-url
 
 
 Fluid viewhelper
@@ -85,9 +80,10 @@ Additionally the extension provides a Fluid viewhelper to easily integrate Shari
 
 .. code-block:: html
 
-	<div xmlns:rx="http://typo3.org/ns/Reelworx/RxShariff/ViewHelper">
-		<rx:shariff data="{url: 'http://example.com/'}" services="whatsapp,facebook" enableBackend="true" />
-	</div>
+   <html xmlns:rx="http://typo3.org/ns/Reelworx/RxShariff/ViewHelper">
+     <rx:shariff data="{url: 'http://example.com/'}" services="whatsapp,facebook" enableBackend="true" />
+   </html>
+
 
 **Optionally you can define all data attributes available for Shariff.**
 
