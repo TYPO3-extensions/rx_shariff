@@ -31,4 +31,4 @@ Editors can use the provided plugin, to conveniently place the social media butt
 Technically, the backend part is implemented by using a TYPO3 eID script, whose data is loaded by a JS AJAX request
 of the frontend part. The retrieved count values are stored in the TYPO3 cache.
 
-The extension is based on shariff (version 1.24.0) and shariff-backend-php (version 5.2.3).
+The extension is based on shariff (version 1.24.0) and shariff-backend-php (version 6.0.0).

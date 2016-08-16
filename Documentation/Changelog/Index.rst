@@ -9,6 +9,14 @@
 Change Log
 ==========
 
+Version 8.0.0
+-------------
+
+* BREAKING: Officially dropped PHP 5.5 support
+  (though the extension might still work on 5.5 - it's your own risk)
+* Updated shariff-backend to version 6.0.0
+
+
 Version 7.3.1
 -------------
 

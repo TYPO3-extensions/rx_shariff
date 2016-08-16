@@ -7,7 +7,7 @@
 		{
 			"name": "Reelworx GmbH",
 			"role": "Developer",
-			"homepage": "http://reelworx.at/"
+			"homepage": "https://reelworx.at/"
 		}
 	],
 	"replace": {
@@ -15,7 +15,7 @@
 		"typo3-ter/rx-shariff": "self.version"
 	},
 	"require": {
-		"php": "5.5.0 - 7.1.99",
+		"php": "5.6.0 - 7.1.99",
 		"typo3/cms-core": "6.2.9 - 8.99.99"
 	},
 	"autoload": {
