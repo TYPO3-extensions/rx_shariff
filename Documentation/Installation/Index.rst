@@ -37,7 +37,7 @@ jQuery is included by using the local jQuery version shipped with the TYPO3 CMS 
 
 If you want, you can also simply integrate them manually in your own page template:
 
-.. code-block:: ts
+.. code-block:: typoscript
 
    page = PAGE
 
@@ -68,7 +68,7 @@ Pure TypoScript
 For TypoScript usage, the extension provides a default typolink setup to generate the necessary backend-url.
 The setup can be used like this:
 
-.. code-block:: ts
+.. code-block:: typoscript
 
    lib.shariffBackendUrl < plugin.rx_shariff.data-backend-url
 
